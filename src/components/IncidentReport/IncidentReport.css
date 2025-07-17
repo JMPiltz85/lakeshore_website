@@ -1,0 +1,73 @@
+.incidentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:98%;
+    padding: .5em;
+}
+
+.incidentForm-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
+  
+}
+
+.incidentForm-control  > label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  padding-left:20px;
+  min-width: 80px;
+  flex:1;
+}
+
+.incidentForm-control  > input {
+  flex:2;
+    min-width:80px;
+}
+
+.incidentForm-control  > textarea {
+  flex:2;
+  min-width:80px;
+  min-height:80px;
+}
+
+.incidentForm-control > button{
+   background: #191970;
+   color: white;
+   border: 0;
+   width:80px;
+   height:30px;
+   border-radius: 10px;
+   cursor:pointer;
+}
+
+.incidentForm-radioSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
+  
+}
+
+.incidentForm-radioSection > .radioHeader {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    padding-left:20px!important;
+    min-width: 80px;
+    flex:1; 
+}
+
+.incidentForm-radioSection > .radio-group {
+    flex:2; 
+    text-align: left;
+}
+
+.radio-group > label{
+    margin-right:5px;
+}

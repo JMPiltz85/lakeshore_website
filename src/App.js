@@ -8,6 +8,7 @@ import Bylaws from './components/Bylaws/Bylaws';
 import Policies from './components/Policies/Policies';
 import WorkOrder from './components/WorkOrder/WorkOrder';
 import UnitSample from './components/UnitSample/UnitSample';
+import IncidentReport from './components/IncidentReport/IncidentReport'
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Home link={WorkOrder} />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/bylaws" element={<Bylaws />} />
           <Route path="/policies" element={<Policies />} />
           <Route path="/workorder" element={<WorkOrder />} />
+          <Route path="/incidentreport" element={<IncidentReport />} />
           <Route path="/unitsample" element={<UnitSample />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

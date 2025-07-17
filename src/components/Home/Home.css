@@ -1,0 +1,54 @@
+.outerBox{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+
+.innerBox{
+
+    display: flex;
+    flex-direction: column;
+    width:65%;
+}
+
+.topBox{
+    width:90%;
+}
+.memberSection{
+    border:4px solid #005A9C;
+    border-radius:10px; 
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:45%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom:10px;
+}
+
+td{
+    text-align: left;
+}
+
+.linkTable{
+    
+}
+
+.linkTable a{
+    text-decoration: none;
+}
+
+.linkTable a:hover{
+    text-decoration: underline;
+}

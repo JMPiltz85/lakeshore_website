@@ -19,9 +19,10 @@ export  default function Header(){
                     <li> <Link to="/bylaws">Bylaws</Link> </li>
                     <li> <Link to="/policies">Policies</Link> </li>
                     <li> <Link to="/workorder">Work Order</Link> </li>
+                    <li> <Link to="/incidentreport">Incident Report</Link> </li>
                     <li> <Link to="/unitsample">Unit Sample</Link> </li>
                     <li> <Link to="/about">About</Link> </li>
-                    <li> <Link to="/contact">Contact</Link> </li>
+                    <li> <Link to="/contact">Contact Us</Link> </li>
                 </ul>
             </nav>
 

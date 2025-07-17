@@ -1,4 +1,4 @@
-form {
+.workForm {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -7,10 +7,10 @@ form {
 }
 
 .form-control {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
   
   
 }
@@ -21,15 +21,18 @@ form {
   color: #333;
   text-align: left;
   padding-left:20px;
+  min-width: 80px;
   flex:1;
 }
 
 .form-control  > input {
   flex:2;
+  min-width:80px;
 }
 
 .form-control  > textarea {
   flex:2;
+  min-width:80px;
 }
 
 .form-control > button{
