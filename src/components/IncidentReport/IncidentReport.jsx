@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import "./IncidentReport.css"
+import LoadSpinner from '../LoadSpinner/LoadSpinner';
 import tipsPDF from "../../documents/Incident_Reports_Tips.pdf"
 
 export default function IncidentReport(){
@@ -25,6 +26,8 @@ export default function IncidentReport(){
                 policeDescription:''
 
             });
+
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -123,6 +126,14 @@ export default function IncidentReport(){
             `
             console.log(text);
 
+        setIsLoading(true);
+
+        //NOTE: Scrolls to top of page. NEcessary since form is tall.
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // or 'auto' for instant scroll
+        });
+
         try {
             const response = await axios.post(url, 
                 {
@@ -135,9 +146,14 @@ export default function IncidentReport(){
             alert("Your incident report has been successfully submitted.");
 
             clearForm();
+            
         } 
         catch (error) {
             console.log('Error sending email: ' + error.message);
+        }
+
+        finally{
+            setIsLoading(false);
         }
 
     };
@@ -146,6 +162,9 @@ export default function IncidentReport(){
         <main>
 
             <div className='outerBox'>
+
+                <LoadSpinner isLoading={isLoading} />
+
                 <h1>Incident Report</h1>
 
                 <div className="innerBox">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import "./WorkOrder.css"
+import LoadSpinner from '../LoadSpinner/LoadSpinner';
 
 export default function WorkOrder(){
 
@@ -11,6 +12,8 @@ export default function WorkOrder(){
             unitNum: '',
             description:''
         });
+
+    const [isLoading, setIsLoading] = useState(false);
 
 
 
@@ -49,6 +52,8 @@ export default function WorkOrder(){
         `
         let subject = `Work order from Unit #${formData.unitNum}`;
 
+        setIsLoading(true);
+
         try {
             const response = await axios.post(url, 
                 {
@@ -65,6 +70,9 @@ export default function WorkOrder(){
         catch (error) {
             console.log('Error sending email: ' + error.message);
         }
+        finally{
+            setIsLoading(false);
+        }
 
         //console.log(formData);
     };
@@ -73,8 +81,9 @@ export default function WorkOrder(){
         <main>
             
 
-
             <div className='outerBox'>
+
+                <LoadSpinner isLoading={isLoading} />
 
                 <h1>Work Order</h1>
 
