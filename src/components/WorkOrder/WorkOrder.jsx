@@ -14,6 +14,7 @@ export default function WorkOrder(){
         });
 
     const [isLoading, setIsLoading] = useState(false);
+    let loadMessage = "Sending...";
 
 
 
@@ -83,7 +84,7 @@ export default function WorkOrder(){
 
             <div className='outerBox'>
 
-                <LoadSpinner isLoading={isLoading} />
+                <LoadSpinner isLoading={isLoading} message={loadMessage} />
 
                 <h1>Work Order</h1>
 

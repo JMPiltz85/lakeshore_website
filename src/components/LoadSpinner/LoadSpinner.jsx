@@ -11,7 +11,7 @@ export default function LoadSpinner(props){
     return(
 
         <div>
-            <span className={msgClass}> Loading...</span>
+            <span className={msgClass}> {props.message}</span>
 
             <div className={loadClass}></div>
 

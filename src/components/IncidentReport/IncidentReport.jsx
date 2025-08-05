@@ -6,7 +6,7 @@ import tipsPDF from "../../documents/Incident_Reports_Tips.pdf"
 
 export default function IncidentReport(){
 
-
+    let loadMessage = "Sending...";
     const [formData, setFormData] = useState({
                 name: '',
                 unitNum:'',
@@ -163,7 +163,7 @@ export default function IncidentReport(){
 
             <div className='outerBox'>
 
-                <LoadSpinner isLoading={isLoading} />
+                <LoadSpinner isLoading={isLoading}  message={loadMessage} />
 
                 <h1>Incident Report</h1>
 
