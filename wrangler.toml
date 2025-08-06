@@ -1,0 +1,4 @@
+name = "lakeshore_website"
+pages_build_output_dir = "./build"
+
+compatibility_date = "2025-08-06"

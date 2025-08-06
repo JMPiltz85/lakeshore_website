@@ -18,7 +18,8 @@
     "react-scripts": "^5.0.1",
     "w3c-hr-time": "^1.0.2",
     "web-vitals": "^5.1.0",
-    "webpack-dev-server": "^5.2.2"
+    "webpack-dev-server": "^5.2.2",
+    "wrangler": "^4.28.0"
   },
   "scripts": {
     "start": "react-scripts start",
