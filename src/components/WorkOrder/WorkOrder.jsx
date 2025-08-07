@@ -74,7 +74,7 @@ export default function WorkOrder(){
             clearForm();
         } 
         catch (error) {
-            console.log('Error sending email: ' + error.message);
+            console.log('Error sending email: ' + error);
         }
         finally{
             setIsLoading(false);
