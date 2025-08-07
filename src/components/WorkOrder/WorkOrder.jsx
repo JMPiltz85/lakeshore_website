@@ -61,6 +61,11 @@ export default function WorkOrder(){
                     to,
                     subject,
                     text
+                },
+                {
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
                 }
             );
             console.log('Email sent successfully!');
