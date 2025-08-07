@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import "./IncidentReport.css"
 import LoadSpinner from '../LoadSpinner/LoadSpinner';
 import tipsPDF from "../../documents/Incident_Reports_Tips.pdf"
+import {sendEmail} from "../../util/email_worker"
 
 export default function IncidentReport(){
 
@@ -135,13 +135,9 @@ export default function IncidentReport(){
         });
 
         try {
-            const response = await axios.post(url, 
-                {
-                    to,
-                    subject,
-                    text
-                }
-            );
+            
+            await sendEmail({ to, subject, text }); 
+
             console.log('Email sent successfully!');
             alert("Your incident report has been successfully submitted.");
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import "./WorkOrder.css"
 import LoadSpinner from '../LoadSpinner/LoadSpinner';
+import {sendEmail} from "../../util/email_worker"
 
 export default function WorkOrder(){
 
@@ -39,7 +39,6 @@ export default function WorkOrder(){
 
         //const to="manager.lakeshore@rogers.com";
         const to=process.env.REACT_APP_TO_EMAIL;
-        const url=process.env.REACT_APP_API_URL;
 
         let currentDate = new Date().toLocaleString(); //gets the current date and time. Looks like: "09/08/2014, 2:35:56 AM"
         let text = 
@@ -56,27 +55,14 @@ export default function WorkOrder(){
         setIsLoading(true);
 
         try {
-            const response = await axios.post(url, 
-                {
-                    to,
-                    subject,
-                    text
-                },
-                {
-                    headers: {
-                        "Content-Type": "application/json"
-                    }
-                }
-            );
-            console.log('Email sent successfully!');
+            await sendEmail({ to, subject, text }); // 👈 Use the external function
             alert("Your work order has been successfully submitted.");
-
             clearForm();
         } 
         catch (error) {
-            console.log('Error sending email: ' + error);
-        }
-        finally{
+            alert("There was a problem sending your work order. Please try again.");
+        } 
+        finally {
             setIsLoading(false);
         }
 
