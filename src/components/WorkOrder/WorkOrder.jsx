@@ -16,7 +16,7 @@ export default function WorkOrder(){
     const [isLoading, setIsLoading] = useState(false);
     let loadMessage = "Sending...";
 
-
+    console.log("API URL:" + process.env.REACT_APP_API_URL);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
