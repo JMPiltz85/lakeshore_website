@@ -136,6 +136,7 @@ export default function IncidentReport(){
 
         try {
             
+            // calls "sendEmail", which is found in "util/email_worker.js"
             await sendEmail({ to, subject, text }); 
 
             console.log('Email sent successfully!');

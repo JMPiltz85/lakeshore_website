@@ -55,7 +55,8 @@ export default function WorkOrder(){
         setIsLoading(true);
 
         try {
-            await sendEmail({ to, subject, text }); // 👈 Use the external function
+            // calls "sendEmail", which is found in "util/email_worker.js"
+            await sendEmail({ to, subject, text }); 
             alert("Your work order has been successfully submitted.");
             clearForm();
         } 
@@ -66,7 +67,6 @@ export default function WorkOrder(){
             setIsLoading(false);
         }
 
-        //console.log(formData);
     };
 
     return (
