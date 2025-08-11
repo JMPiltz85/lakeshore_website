@@ -11,3 +11,4 @@ REACT_APP_TO_EMAIL = "jmpiltz@gmail.com"
 # environment-specific sections
 [env.production.vars]
 REACT_APP_API_URL = "https://lakeshore-emailer.netlify.app/.netlify/functions/send-email"
+REACT_APP_TO_EMAIL = "jmpiltz@gmail.com"
