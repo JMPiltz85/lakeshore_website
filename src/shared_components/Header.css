@@ -1,56 +1,124 @@
+/* === Desktop Styles === */
+/* Group logo and hamburger */
+.headerBar {
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header {
   display: flex;
   flex-direction: row;
-  padding:5px 10px 2px;
-  margin:10px 10px 10px;
+  padding: 5px 10px 2px;
+  margin: 10px 10px 10px;
   border-bottom: 1px solid #000;
   background-color: white;
   border-radius: 15px;
 
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   max-height: 100px;
 }
 
-.headerTitle{
-  
-    font-size: 24px;
-    font-weight: bold;
-    color:#005A9C;
+.headerTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #005A9C;
 }
 
-.headerTitle a{
+.headerTitle a {
   text-decoration: none;
   color: black;
 }
 
 .headerTitle a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.nav{
+.nav {
   margin-left: auto;
 }
 
 .nav ul {
-    list-style: none;
-    display: flex;
-    gap: 6px;
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
 }
 
 .nav a {
-    text-decoration: none;
-    color:#005A9C;
-    font-size: 18px;
-    padding: 6px; 
+  text-decoration: none;
+  color: #005A9C;
+  font-size: 18px;
+  padding: 6px;
 }
 
 .nav a:hover {
-    /*text-decoration: underline;  */
-    border: 4px solid #005A9C;
+  border: 4px solid #005A9C;
 }
 
-.logo{
-  width:100px;
-  height:85px;
+.logo {
+  width: 100px;
+  height: 85px;
+}
+
+.hamburgerWrapper {
+  display: none; /* default hidden */
+}
+
+/* === Mobile Styles === */
+@media (max-width: 768px) {
+  /* Stack the header vertically */
+  .headerBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: none;
+  }
+
+  .hamburgerWrapper {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+  }
+
+  .nav.open {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav li {
+    padding: 5px 10px;
+  }
+
+  .nav a {
+    font-size: 20px;
+    padding: 8px;
+    display: block;
+    width: 100%;
+  }
+
+  .logo {
+    width: 80px;
+    height: auto;
+  }
 }

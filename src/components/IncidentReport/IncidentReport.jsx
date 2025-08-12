@@ -198,7 +198,7 @@ export default function IncidentReport(){
                                 id="phone"
                                 name="phone"
                                 placeholder="123-4567-8901"
-                                size="20" minlength="11" maxLength="17"
+                                size="20" minLength="11" maxLength="17"
                                 value={formData.phone}
                                 onChange={handleChange}
                                 required
