@@ -14,7 +14,7 @@ export default function Home(){
             <div className='outerBox'>
 
                 <div className='topBox'>
-                    <h1>Welcome to Lakeshore Gardens Co-op!</h1>
+                    <span className="topHeader">Welcome to Lakeshore Gardens Co-op!</span>
                 </div>
 
                 <div className='memberSection'>

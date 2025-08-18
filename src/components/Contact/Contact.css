@@ -36,7 +36,7 @@
 .contractHeader{
 
     font-weight:bold;
-    font-size: 1.5em;
+    font-size: 24px;
     text-align: center;
     padding: 10px;
 }
@@ -47,6 +47,7 @@
     justify-content: right;
     align-items: center; 
     border: 1px solid #ccc;
+    margin:10px;
 
 }
 
@@ -58,4 +59,33 @@
 .leftCell{
     font-weight: bold;
     vertical-align: top;
+}
+
+
+@media (max-width: 768px) {
+
+    .contractTable{
+        border: 1px solid #ccc;
+
+    }
+
+    .contractHeader{
+        font-size: 22px;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .contractTable{
+
+        border: 0px solid #ccc;
+
+    }
+
+    .contractHeader{
+        font-size: 20px;
+    }
+
 }

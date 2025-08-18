@@ -29,3 +29,11 @@ main {
   color:#005A9C;
 }
 
+@media (max-width: 768px) {
+
+    main {
+        min-height: 77vh;
+
+    }
+
+}

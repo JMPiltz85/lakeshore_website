@@ -1,3 +1,9 @@
+.incidentInnerBox{
+    display: flex;
+    flex-direction: column;
+    width:65%;
+}
+
 .incidentForm {
     display: flex;
     flex-direction: column;
@@ -69,5 +75,24 @@
 }
 
 .radio-group > label{
-    margin-right:5px;
+    display: inline;
+    margin-right:22px;
+}
+
+.docLinkSection{
+    margin-top:10px;
+}
+
+@media (max-width: 768px) {
+
+    .incidentInnerBox{
+        width:80%;
+
+    }
+
+    .radio-group > label{
+        display: block;
+        margin-right:22px;
+    }
+
 }

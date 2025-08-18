@@ -16,7 +16,15 @@
 
 .topBox{
     width:90%;
+    margin:20px;
 }
+
+.topHeader{
+    display: block;
+    font-size:32px;
+    font-weight:bold;
+}
+
 .memberSection{
     border:4px solid #005A9C;
     border-radius:10px; 
@@ -51,4 +59,16 @@ td{
 
 .linkTable a:hover{
     text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+
+    .memberSection{
+        width:60%;
+    }
+
+    .topHeader{
+        font-size:30px;
+    }
 }

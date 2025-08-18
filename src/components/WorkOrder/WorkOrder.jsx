@@ -77,7 +77,7 @@ export default function WorkOrder(){
 
                 <h1>Work Order</h1>
 
-                <div className="innerBox">
+                <div className="orderInnerBox">
                     <form className="workForm" onSubmit={handleSubmit}>
 
                         <div className="form-control">

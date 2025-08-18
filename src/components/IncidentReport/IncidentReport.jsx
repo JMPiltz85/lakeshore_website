@@ -164,7 +164,7 @@ export default function IncidentReport(){
 
                 <h1>Incident Report</h1>
 
-                <div className="innerBox">
+                <div className="incidentInnerBox">
 
                     <form className="incidentForm" onSubmit={handleReportSubmit}>
 
@@ -285,65 +285,81 @@ export default function IncidentReport(){
 
                             <div className="radio-group">
 
-                                <label>
-                                    <input
-                                        type="radio"
-                                        name="category"
-                                        value="Life"
-                                        checked={formData.category === 'Life'}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                    Life
-                                </label>
+                                <div>
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="category"
+                                            value="Life"
+                                            checked={formData.category === 'Life'}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                        Life
+                                    </label>
 
-                                <label>
-                                    <input
-                                        type="radio"
-                                        name="category"
-                                        value="Building"
-                                        checked={formData.category === 'Building'}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                    Building
-                                </label>
+                                </div>
+                                
+                                <div>
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="category"
+                                            value="Building"
+                                            checked={formData.category === 'Building'}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                        Building
+                                    </label>
 
-                                <label>
-                                    <input
-                                        type="radio"
-                                        name="category"
-                                        value="Security"
-                                        checked={formData.category === 'Security'}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                    Security
-                                </label>
+                                </div>
+                                
+                                <div>
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="category"
+                                            value="Security"
+                                            checked={formData.category === 'Security'}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                        Security
+                                    </label>
 
-                                <label>
-                                    <input
-                                        type="radio"
-                                        name="category"
-                                        value="Breach"
-                                        checked={formData.category === 'Breach'}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                    Breach
-                                </label>
+                                </div>
+                                
+                                <div>
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="category"
+                                            value="Breach"
+                                            checked={formData.category === 'Breach'}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                        Breach
+                                    </label>
 
-                                <label>
-                                    <input
-                                        type="radio"
-                                        name="category"
-                                        value="Other"
-                                        checked={formData.category === 'Other'}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                    Other
-                                </label>
+                                </div>
+                                
+                                <div>
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="category"
+                                            value="Other"
+                                            checked={formData.category === 'Other'}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                        Other
+                                    </label>
+
+                                </div>
+                                
 
                             </div>
 
@@ -612,7 +628,7 @@ export default function IncidentReport(){
 
                 </div>
                 
-                <div>
+                <div className="docLinkSection">
                     <a href = {tipsPDF} target = "_blank" rel="noreferrer">Useful Incident Report Tips</a>
                 </div>
 
