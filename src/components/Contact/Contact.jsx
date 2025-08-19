@@ -17,8 +17,8 @@ export default function Contact(){
                 <table className="contractTable">
                     <tbody>
                         <tr>
-                            <td className="leftCell"> Manager:  </td>
-                            <td> Anna Tirca</td>
+                            <td className="leftCell"> Contact:  </td>
+                            <td> Manager / Coordinator</td>
                         </tr>
                         <tr>
                             <td className="leftCell">
@@ -43,11 +43,20 @@ export default function Contact(){
                         <tr>
                             <td className="leftCell">Email: </td>
                             <td>
+                                <div>
+                                    <a href="mailto:manager.lakeshore@rogers.com" >
+                                        <img src={email_logo} alt="Email Us" className="icon" />
+                                        manager.lakeshore@rogers.com
+                                    </a>
+                                </div>
 
-                                <a href="mailto:manager.lakeshore@rogers.com" >
-                                    <img src={email_logo} alt="Email Us" className="icon" />
-                                    manager.lakeshore@rogers.com
-                                </a>
+                                <div>
+                                    <a href="mailto:coordinator.lakeshore@rogers.com" >
+                                        <img src={email_logo} alt="Email Us" className="icon" />
+                                        coordinator.lakeshore@rogers.com
+                                    </a>
+                                </div>
+                                
                             </td>
                         </tr>
                         <tr>
