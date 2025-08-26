@@ -52,11 +52,13 @@ header {
   text-decoration: none;
   color: #005A9C;
   font-size: 18px;
-  padding: 6px;
+  padding: 4px;
 }
 
 .nav a:hover {
-  border: 4px solid #005A9C;
+  /* border: 3px solid #005A9C;  */
+   font-weight: bold; 
+   text-decoration: underline;
 }
 
 .logo {

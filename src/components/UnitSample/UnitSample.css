@@ -1,0 +1,8 @@
+.sampleInnerBox{
+
+    display: flex;
+    flex-direction: column;
+    width:75%;
+    border:3px solid #005A9C;
+    border-radius:10px;
+}

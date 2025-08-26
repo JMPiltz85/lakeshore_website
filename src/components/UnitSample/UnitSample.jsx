@@ -1,3 +1,5 @@
+import "./UnitSample.css"
+
 export default function UnitSample(){
 
     return (
@@ -8,8 +10,8 @@ export default function UnitSample(){
             <div className='outerBox'>
                 <h1>Unit Sample</h1>
 
-                <div className="innerBox">
-
+                <div className="sampleInnerBox">
+                    <p>placeholder</p>
 
                 </div>
                 

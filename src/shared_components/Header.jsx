@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Sling as Hamburger } from 'hamburger-react';
 import "./Header.css"
-import logo from "../images/lakeshore_logo.png"
+import logo from "../images/icons/lakeshore_logo.png"
 
 export  default function Header(){
 

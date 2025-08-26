@@ -1,5 +1,5 @@
-import phone_logo from "../../images/phone_icon.png"
-import email_logo from "../../images/email_icon.png"
+import phone_logo from "../../images/icons/phone_icon.png"
+import email_logo from "../../images/icons/email_icon.png"
 import  "./Contact.css"
 
 export default function Contact(){

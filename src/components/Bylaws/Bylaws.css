@@ -1,0 +1,28 @@
+.bylawInnerBox{
+
+    display: flex;
+    flex-direction: column;
+    width:75%;
+    border:3px solid #005A9C;
+    border-radius:10px;
+    padding:10px;
+}
+
+.bylaw-link-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-content: left;
+  justify-items: left;
+}
+.bylaw-link-grid a {
+
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+
+.bylaw-link-grid a:hover{
+    text-decoration: underline;
+}

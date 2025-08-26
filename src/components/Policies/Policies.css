@@ -1,0 +1,26 @@
+.policyInnerBox{
+
+    display: flex;
+    flex-direction: column;
+    width:75%;
+    border:3px solid #005A9C;
+    border-radius:10px;
+    padding:10px;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.link-grid a {
+
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+
+.link-grid a:hover{
+    text-decoration: underline;
+}
