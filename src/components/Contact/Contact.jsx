@@ -34,7 +34,7 @@ export default function Contact(){
                             <td className="leftCell"> Office Phone: </td>
                             <td>
                                 <a href="tel:+14162556660" >
-                                    <img src={phone_logo} alt="Call (416) 255-6660" className="icon" />
+                                    <img src={phone_logo} alt="Call (416) 255-6660" className="icon" loading="lazy" />
                                     (416) 255-6660
                                 </a>
 
@@ -45,14 +45,14 @@ export default function Contact(){
                             <td>
                                 <div>
                                     <a href="mailto:manager.lakeshore@rogers.com" >
-                                        <img src={email_logo} alt="Email Us" className="icon" />
+                                        <img src={email_logo} alt="Email Us" className="icon" loading="lazy" />
                                         manager.lakeshore@rogers.com
                                     </a>
                                 </div>
 
                                 <div>
                                     <a href="mailto:coordinator.lakeshore@rogers.com" >
-                                        <img src={email_logo} alt="Email Us" className="icon" />
+                                        <img src={email_logo} alt="Email Us" className="icon" loading="lazy" />
                                         coordinator.lakeshore@rogers.com
                                     </a>
                                 </div>

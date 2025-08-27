@@ -61,6 +61,20 @@ td{
     text-decoration: underline;
 }
 
+.imgSection{
+    width:45%;
+    margin:10px;
+    padding:10px;
+
+    border:3px solid #005A9C;
+    border-radius:10px; 
+}
+
+.homeImg {
+    width: 95%; 
+    height:250px;
+}
+
 
 @media (max-width: 768px) {
 
@@ -71,4 +85,14 @@ td{
     .topHeader{
         font-size:30px;
     }
+
+    .imgSection{
+         width:60%;
+         
+    }
+
+    .homeImg{
+        height:220px;
+    }
 }
+

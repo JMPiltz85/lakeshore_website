@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import welcomePDF from "../../documents/Move_In_Information.pdf"
+import frontPic from "../../images/pictures/Lakeshore_Gardens_Front.jpg"
 import "./Home.css"
 
 export default function Home(){
@@ -15,6 +16,12 @@ export default function Home(){
 
                 <div className='topBox'>
                     <span className="topHeader">Welcome to Lakeshore Gardens Co-op!</span>
+                </div>
+
+                <div className="imgSection">
+                    <img src={frontPic} loading="lazy" decoding="async"
+                        alt="LakeShore Gardens" className='homeImg'/>
+
                 </div>
 
                 <div className='memberSection'>
