@@ -1,14 +1,14 @@
 name = "lakeshore_website"
 pages_build_output_dir = "./build"
 
-compatibility_date = "2025-08-06"
+compatibility_date = "2025-08-28"
 
 # Runtime environment variables
 [vars]
 REACT_APP_API_URL = "https://lakeshore-emailer.netlify.app/.netlify/functions/send-email"
-REACT_APP_TO_EMAIL = "manager.lakeshore@rogers.com"
+REACT_APP_TO_EMAIL = "coordinator.lakeshore@rogers.com"
 
 # environment-specific sections
 [env.production.vars]
 REACT_APP_API_URL = "https://lakeshore-emailer.netlify.app/.netlify/functions/send-email"
-REACT_APP_TO_EMAIL = "manager.lakeshore@rogers.com"
+REACT_APP_TO_EMAIL = "coordinator.lakeshore@rogers.com"
