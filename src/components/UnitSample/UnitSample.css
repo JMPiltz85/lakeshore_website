@@ -17,6 +17,12 @@
     border-radius:10px;
 }
 
+.sampleHeader{
+    font-size: 1.17em;
+    text-decoration: underline;
+    margin:10px;
+}
+
 @media(max-width:1150px){
     .picDimension{
         width:220px;
