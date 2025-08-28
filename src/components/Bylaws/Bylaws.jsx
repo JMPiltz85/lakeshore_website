@@ -6,8 +6,6 @@ export default function Bylaws(){
 
         <main>
 
-            
-
             <div className='outerBox'>
 
                 <h1>Co-op Bylaws</h1>
